@@ -113,3 +113,21 @@ Ahora es hora de clonar el respositorio en nuestro ordenador para poder trabajar
 `git clone git@github.com:usuario/tareas-iniciales-usuario.git`
 
 Donde claramente usuario es vuestro nombre de usuario.
+
+
+###### 1.2.4. Modificación y pusheado
+
+Ahora modificamos los ficheros que queramos, guardamos con `git add . && git commit -m "First Commit"` y los subimos con `git push`.
+
+
+###### 1.2.5. Pull request
+
+Por último nos gustaría que los cambios que hemos realizado en nuestra copia del repositorio se actualizaran en el repositorio original y para ello usaremos el __Pull Request__.
+
+Debemos ir a la copia del repositorio en nuestra  cuenta y pulsar el botón que se muestra a continuación:
+
+![](./images/PL-1.2-7.jpg)
+
+Este botón nos llevará a una página en la cual podemos ver los cambios respecto a la versión original:
+
+![](./images/PL-1.2-9.jpg)
