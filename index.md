@@ -2,16 +2,15 @@
 
 En este tutorial se describirá los pasos necesarios  para configurar:
 
-+  Github
++ Github
 + Nodejs
-  - Express
++ Express
 + Foto de perfil
 + Atom
 + Cloud9
 + Markdown
-+ Traductores Markdown -> HTML
- - Pandoc
- - Kramdown
++ Pandoc
+
 
 
 # 1. [Github](https://github.com/)
@@ -20,6 +19,7 @@ En este tutorial se describirá los pasos necesarios  para configurar:
 Para empezar necesita tener cuenta en [Github](https://github.com/), así que si no la tiene, créela.
 
 En este apartado se definirán varias funcionalidades y conceptos de Github, como:
+
 + Github Classrom
 + Repository
 + Fork
