@@ -11,7 +11,6 @@ En este tutorial se describirá los pasos necesarios  para configurar:
 + Markdown
 + Traductores Markdown -> HTML
  - Pandoc
- - Kramdown
 
 
 # 1. [Github](https://github.com/)
