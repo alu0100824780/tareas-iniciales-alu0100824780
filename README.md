@@ -5,8 +5,7 @@ En este tutorial se describirá los pasos necesarios  para configurar:
 +  Github
 + Nodejs
   - Express
-+ Campus virtual
- - Foto de perfil
++ Foto de perfil
 + Atom
 + Cloud9
 + Markdown
@@ -15,7 +14,7 @@ En este tutorial se describirá los pasos necesarios  para configurar:
  - Kramdown
 
 
-# 1. Github
+# 1. [Github](https://github.com/)
 
 ### 1.1. Introducción a los conceptos
 Para empezar necesita tener cuenta en [Github](https://github.com/), así que si no la tiene, créela.
@@ -67,7 +66,7 @@ Las Issues son buenas para tener un seguimiento de las tareas, mejoras y bugs de
 
 
 
-### 1.2. Crear nuestro repositorio perteneciente a la Classroom ULL-ESIT-GRADOII-PL
+### 1.2. Classroom ULL-ESIT-GRADOII-PL
 
 Como hemos visto anteriormente una clase es una organización con asignaciones, por lo tanto vamos a solicitar la creación de nuestro resitorio el la clase.
 
@@ -122,7 +121,7 @@ Ahora modificamos los ficheros que queramos, guardamos con `git add . && git com
 
 ###### 1.2.5. Pull request
 
-Por último nos gustaría que los cambios que hemos realizado en nuestra copia del repositorio se actualizaran en el repositorio original y para ello usaremos el __Pull Request__.
+Ahora nos gustaría que los cambios que hemos realizado en nuestra copia del repositorio se actualizaran en el repositorio original y para ello usaremos el __Pull Request__.
 
 Debemos ir a la copia del repositorio en nuestra  cuenta y pulsar el botón que se muestra a continuación:
 
@@ -131,3 +130,143 @@ Debemos ir a la copia del repositorio en nuestra  cuenta y pulsar el botón que 
 Este botón nos llevará a una página en la cual podemos ver los cambios respecto a la versión original:
 
 ![](./images/PL-1.2-9.jpg)
+
+Finalmente pulsando en el botón __Create pull request__ nos permitirá opcionalmente asociarle un comentario para justificarle al dueño del repositorio original nuestra petición de actualización y ya solo tenemos que esperar a que la acepte.
+
+
+
+# 2. [Nodejs](https://nodejs.org)
+
+![](./images/PL-2-1.png)
+
+Node.js es un intérprete Javascript que trabaja un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor  basado en una arquitectura orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables, como por ejemplo, servidores web.
+
+
+### 1.2. Instalación
+
+La instalación la realizaré en el sístema operativo Linux. Para ello primero ejecutamos el siguiente comando:
+
+`curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -`
+
+Este comando lo que hace es descargar los ficheros necesarios para la instalación posterior con el comando:
+
+`sudo apt-get install -y nodejs`
+
+
+### 1.3. Comprobación
+
+Ahora debemos comprobar que funciona el npm *(node package manager)*, para ello simplemente ejecutamos el siguiente comando:
+
+`npm`
+
+Esto lo que debería mostrarnos es una descripción del comando:
+
+![](./images/PL-2-3.jpg)
+
+Si nos sale esto entonces podemos confirmar que tenemos el npm correctamente instalado.
+
+Además podemos ahora comprobar que funciona el intérprete ejecutando:
+
+`node`
+
+Con este comando debería salirnos el intérprete REPL de Javascript incorporado en Nodejs:
+
+![](./images/PL-2-2.jpg)
+
+### 1.4. Instalación de express
+
+Para instalar express globalmente simplemente ejecutamos el comando:
+
+`npm install -g express`
+
+
+# 3. Foto de perfil
+
+Para establecer nuestra foto de perfil en el campusvirtual simplemente debemos dirigirnos hacia donde está nuestro nombre y pulsar en editar perfil como se muestra a continuación:
+
+![](./images/PL-3-2.jpg)
+
+Entramos ahora en Editar perfil de nuevo
+
+![](./images/PL-3-3.jpg)
+
+Y finalmente bajamos hasta llegar a la sección de __Imagen del usuario__, en donde podemos seleccionar la imagen deseada cómodamente gracias al gestor de archivos.
+
+![](./images/PL-3-1.jpg)
+
+# 4. [Atom](https://atom.io)
+
+Atom es un Editor de código fuente de código abierto y libre para Linux, Windows y OS X. Soporta plugins escritos en Node.js e integra control de versiones. Atom fue desarrollado por GitHub.
+
+### 4.1. Instalación
+
+Para instalar entramos en la página de [Atom](https://atom.io) y una vez dentro:
+
+![](./images/PL-4-1.jpg)
+
+Instalas el paquete que más te guste. Yo en este tutorial descargaré el paquete .deb (debian).
+
+Una vez descargado, ejecutamos el comando:
+
+`sudo dpkg -i DEB_PACKAGE`
+
+Finalmente para abrirlo ejecutamos en la terminal:
+
+`atom`
+
+![](./images/PL-4-2.jpg)
+
+# 5. [Cloud 9](https://c9.io/)
+
+__[Cloud 9](https://c9.io/)__ combina un editor de código potente junto con un entorno de trabajo Ubuntu en la nube, además de soportar más de 40 lenguajes.
+
+### 5.1. Creación de cuenta
+
+Primero entramos en [Cloud 9](https://c9.io/) y podemos ver que podemos registrarnos directamente desde GitHub:
+
+![](./images/PL-5-1.jpg)
+
+### 5.2. Vinculación
+
+Para vincular nuestra cuenta de GitHub junto con c9. Simplemente a la hora de crear un entorno de trabajo (workspace) le podemos indicar que clone a partir de Git simplmente poniendo el URL del repositorio.
+
+![](./images/PL-5-2.jpg)
+
+
+# 6. Markdown
+
+Markdown es un lenguaje de marcado ligero, es decir que ocupa poco espacio y es fácil de editar, que trata conseguir la máxima legibilidad y facilidad de publicación tanto en sus formas de entrada como de salida.
+
+Esta práctica se desarrolla en formato Markdown. Se emplea la siguiente sintaxis:
+
+__Encabezados__
++ "# --> Para encabezados de tipo h1 equivalente en HTML"
++ "### --> Para encabezados de tipo h3 equivalente en HTML"
++ "###### --> Para encabezados de tipo h6 equivalente en HTML"
+
+__Listas__
++ "+ fila1"
++ "+ fila2"
++ "+ fila3"
+
+__Imágenes__
+
+Para imágenes se pone "[título] (link_imagen)" sin el espacio entre medio.
+
+__Enlaces__
+
+Exactamente igual que las imágenes pero en vez de link_imagen es link_url.
+
+# 7. [Pandoc](http://pandoc.org/)
+
+Pandoc es una herramienta que nos permite exportar un fichero fuente en formato Markdown en otro fichero destino en formato HTML de modo que es muy cómodo para trabajar con páginas web.
+
+Entramos primero en el siguiente [link](https://github.com/jgm/pandoc/releases/tag/1.16.0.2) para descargar el fichero .deb:
+
+![](./images/PL-7-1.jpg)
+
+Que sería el fichero __pandoc-1.16.0.2-1-amd64.deb__
+
+Una vez descargado ejecutamos el mismo comando que hemos ejecutado cuando instalamos __Atom__:
+
+`sudo dpkg -i DEB_PACKAGE`

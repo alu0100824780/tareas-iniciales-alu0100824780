@@ -1,0 +1,185 @@
+<h1 id="práctica-1---tareas-iniciales"><strong>Práctica 1 - Tareas iniciales</strong></h1>
+<p>En este tutorial se describirá los pasos necesarios para configurar:</p>
+<ul>
+<li>Github</li>
+<li>Nodejs</li>
+<li>Express</li>
+<li>Foto de perfil</li>
+<li>Atom</li>
+<li>Cloud9</li>
+<li>Markdown</li>
+<li>Traductores Markdown -&gt; HTML</li>
+<li>Pandoc</li>
+<li>Kramdown</li>
+</ul>
+<h1 id="github">1. <a href="https://github.com/">Github</a></h1>
+<h3 id="introducción-a-los-conceptos">1.1. Introducción a los conceptos</h3>
+<p>Para empezar necesita tener cuenta en <a href="https://github.com/">Github</a>, así que si no la tiene, créela.</p>
+<p>En este apartado se definirán varias funcionalidades y conceptos de Github, como: + Github Classrom + Repository + Fork + Commit + Push/Sync + Pull request + Github Pages + Issues</p>
+<p><strong>Si usted conoce estas funcionalidades puede saltarse la introducción (1.1).</strong></p>
+<h6 id="github-classroom">1.1.1. <a href="https://education.github.com/guide">Github Classroom</a></h6>
+<p>Una clase (classroom) en Github es una <a href="https://help.github.com/articles/what-s-the-difference-between-user-and-organization-accounts/">organización</a> en la cual se pueden asignar programas de estudio a los alumnos y éstos pueden crear <strong>Issues</strong> para clarificar cuestiones. Además, si el respositorio es público, otros profesores podrán colaborar con usted para mejorar la calidad de sus materias. En el apartado <strong>1.2</strong> se explica el caso concreto de esta primera práctica.</p>
+<h6 id="repository">1.1.2. Repository</h6>
+<p>Un repositorio es el elemento más básico de GitHub. Es prácticamente un directorio de un proyecto. Un repositorio contiene todos los ficheros de un proyecto (incluyendo la documentación), y almacena todo el historial de cambios de cada uno. Los repositorios pueden tener varios colaboradores y pueden ser públicos o privados.</p>
+<h6 id="fork">1.1.3. <a href="https://guides.github.com/activities/forking/">Fork</a></h6>
+<p>Crear una bifurcación (fork) es producir una copia personal del proyecto de otro. Forks actúa como una especie de puente entre el repositorio original y su copia personal. Puedes además enviar un <strong>Pull Requests</strong> para ayudar a otras personas a realizar mejores proyectos aportando tus mejoras al proyecto original. <strong>Forking es la base de la codificación social en GitHub.</strong></p>
+<h6 id="commit">1.1.4. <a href="https://git-scm.com/docs/git-commit">Commit</a></h6>
+<p><code>git commit</code> es el comando que permite guardar los cambios de un repositorio local para posteriormente mandarlos a un repositorio remoto con un <strong>Push</strong>.</p>
+<h6 id="push">1.1.5. Push</h6>
+<p>Cuando tu proyecto está en un punto en el que deseas compartirlo, tienes que pushearlo con el comando <code>git push</code>. Este comando solo funciona si el proyecto ha sido clonado desde un servidor en el que tienes acceso y si nadie ha pusheado mientras tanto.</p>
+<h6 id="pull-requests">1.1.6. Pull Requests</h6>
+<p>Un pull request es una petición que el propietario de un fork de un repositorio hace al propietario del repositorio original para que este último incorpore los commits que están en el fork.</p>
+<h6 id="github-pages">1.1.7. Github Pages</h6>
+<p>Una Github Page es una página web pública hosteada y publicada a través de Github. De modo que nuestro perfil de usuario o un respositorio puede tener asociada una.</p>
+<h6 id="issues">1.1.8. Issues</h6>
+<p>Las Issues son buenas para tener un seguimiento de las tareas, mejoras y bugs de nuestros proyectos. Son como una especie de email excepto que son compartidas por todo el equipo del proyecto.</p>
+<h3 id="classroom-ull-esit-gradoii-pl">1.2. Classroom ULL-ESIT-GRADOII-PL</h3>
+<p>Como hemos visto anteriormente una clase es una organización con asignaciones, por lo tanto vamos a solicitar la creación de nuestro resitorio el la clase.</p>
+<h6 id="creación-de-repositorio">1.2.1 Creación de repositorio</h6>
+<p>Para ello debemos entrar en el link que se muestra a continuación:</p>
+<div class="figure">
+<img src="./images/PL-1.2-1.jpg" />
+
+</div>
+<p>Entramos y se nos mostrará una propuesta para aceptar el acceso a un repositorio que se creará llamado <em>tareas-iniciales-nombreUsuario</em> que justamente es el nombre usuario con el que estamos logeados que en mi caso es alu0100824780:</p>
+<div class="figure">
+<img src="./images/PL-1.2-2.jpg" alt="logo" />
+<p class="caption">logo</p>
+</div>
+<p>Le damos a <strong>Accept this assignment</strong> y esperamos a que nos manden una confirmación al email.</p>
+<p>Cuando nos manden el email se habrá creado un repositorio en la cuenta del profesor como se muestra a continuación:</p>
+<div class="figure">
+<img src="./images/PL-1.2-3.jpg" alt="repository" />
+<p class="caption">repository</p>
+</div>
+<h6 id="fork-del-repositorio">1.2.2. Fork del repositorio</h6>
+<p>Muy bien, ahora ya tenemos nuestro &quot;espacio&quot; en la clase por lo tanto ahora tenemos que hacer un <strong>fork</strong> para tener una copia del respositorio en nuestra cuenta. Para ello simplemente clickeamos en el botón <em>Fork</em>:</p>
+<div class="figure">
+<img src="./images/PL-1.2-4.jpg" alt="fork" />
+<p class="caption">fork</p>
+</div>
+<p>Ahora simplemente esperamos y nos redirigirá a la copia creada en nuestra cuenta:</p>
+<div class="figure">
+<img src="./images/PL-1.2-5.jpg" alt="our_repository" />
+<p class="caption">our_repository</p>
+</div>
+<p>Además, podemos fijarnos que nos indica dónde se encuentra el repositorio original:</p>
+<div class="figure">
+<img src="./images/PL-1.2-6.jpg" alt="original_repository" />
+<p class="caption">original_repository</p>
+</div>
+<h6 id="clonación-del-repositorio">1.2.3. Clonación del repositorio</h6>
+<p>Ahora es hora de clonar el respositorio en nuestro ordenador para poder trabajar en él. Para ello simplemente cogemos el link SSH o HTTPS, vamos a nuestra terminal y, colocados en el directorio en donde queremos crear el repositorio ejecutamos el comando:</p>
+<p><code>git clone git@github.com:usuario/tareas-iniciales-usuario.git</code></p>
+<p>Donde claramente usuario es vuestro nombre de usuario.</p>
+<h6 id="modificación-y-pusheado">1.2.4. Modificación y pusheado</h6>
+<p>Ahora modificamos los ficheros que queramos, guardamos con <code>git add . &amp;&amp; git commit -m &quot;First Commit&quot;</code> y los subimos con <code>git push</code>.</p>
+<h6 id="pull-request">1.2.5. Pull request</h6>
+<p>Ahora nos gustaría que los cambios que hemos realizado en nuestra copia del repositorio se actualizaran en el repositorio original y para ello usaremos el <strong>Pull Request</strong>.</p>
+<p>Debemos ir a la copia del repositorio en nuestra cuenta y pulsar el botón que se muestra a continuación:</p>
+<div class="figure">
+<img src="./images/PL-1.2-7.jpg" />
+
+</div>
+<p>Este botón nos llevará a una página en la cual podemos ver los cambios respecto a la versión original:</p>
+<div class="figure">
+<img src="./images/PL-1.2-9.jpg" />
+
+</div>
+<p>Finalmente pulsando en el botón <strong>Create pull request</strong> nos permitirá opcionalmente asociarle un comentario para justificarle al dueño del repositorio original nuestra petición de actualización y ya solo tenemos que esperar a que la acepte.</p>
+<h1 id="nodejs">2. <a href="https://nodejs.org">Nodejs</a></h1>
+<div class="figure">
+<img src="./images/PL-2-1.png" />
+
+</div>
+<p>Node.js es un intérprete Javascript que trabaja un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en una arquitectura orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables, como por ejemplo, servidores web.</p>
+<h3 id="instalación">1.2. Instalación</h3>
+<p>La instalación la realizaré en el sístema operativo Linux. Para ello primero ejecutamos el siguiente comando:</p>
+<p><code>curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -</code></p>
+<p>Este comando lo que hace es descargar los ficheros necesarios para la instalación posterior con el comando:</p>
+<p><code>sudo apt-get install -y nodejs</code></p>
+<h3 id="comprobación">1.3. Comprobación</h3>
+<p>Ahora debemos comprobar que funciona el npm <em>(node package manager)</em>, para ello simplemente ejecutamos el siguiente comando:</p>
+<p><code>npm</code></p>
+<p>Esto lo que debería mostrarnos es una descripción del comando:</p>
+<div class="figure">
+<img src="./images/PL-2-3.jpg" />
+
+</div>
+<p>Si nos sale esto entonces podemos confirmar que tenemos el npm correctamente instalado.</p>
+<p>Además podemos ahora comprobar que funciona el intérprete ejecutando:</p>
+<p><code>node</code></p>
+<p>Con este comando debería salirnos el intérprete REPL de Javascript incorporado en Nodejs:</p>
+<div class="figure">
+<img src="./images/PL-2-2.jpg" />
+
+</div>
+<h3 id="instalación-de-express">1.4. Instalación de express</h3>
+<p>Para instalar express globalmente simplemente ejecutamos el comando:</p>
+<p><code>npm install -g express</code></p>
+<h1 id="foto-de-perfil">3. Foto de perfil</h1>
+<p>Para establecer nuestra foto de perfil en el campusvirtual simplemente debemos dirigirnos hacia donde está nuestro nombre y pulsar en editar perfil como se muestra a continuación:</p>
+<div class="figure">
+<img src="./images/PL-3-2.jpg" />
+
+</div>
+<p>Entramos ahora en Editar perfil de nuevo</p>
+<div class="figure">
+<img src="./images/PL-3-3.jpg" />
+
+</div>
+<p>Y finalmente bajamos hasta llegar a la sección de <strong>Imagen del usuario</strong>, en donde podemos seleccionar la imagen deseada cómodamente gracias al gestor de archivos.</p>
+<div class="figure">
+<img src="./images/PL-3-1.jpg" />
+
+</div>
+<h1 id="atom">4. <a href="https://atom.io">Atom</a></h1>
+<p>Atom es un Editor de código fuente de código abierto y libre para Linux, Windows y OS X. Soporta plugins escritos en Node.js e integra control de versiones. Atom fue desarrollado por GitHub.</p>
+<h3 id="instalación-1">4.1. Instalación</h3>
+<p>Para instalar entramos en la página de <a href="https://atom.io">Atom</a> y una vez dentro:</p>
+<div class="figure">
+<img src="./images/PL-4-1.jpg" />
+
+</div>
+<p>Instalas el paquete que más te guste. Yo en este tutorial descargaré el paquete .deb (debian).</p>
+<p>Una vez descargado, ejecutamos el comando:</p>
+<p><code>sudo dpkg -i DEB_PACKAGE</code></p>
+<p>Finalmente para abrirlo ejecutamos en la terminal:</p>
+<p><code>atom</code></p>
+<div class="figure">
+<img src="./images/PL-4-2.jpg" />
+
+</div>
+<h1 id="cloud-9">5. <a href="https://c9.io/">Cloud 9</a></h1>
+<p><strong><a href="https://c9.io/">Cloud 9</a></strong> combina un editor de código potente junto con un entorno de trabajo Ubuntu en la nube, además de soportar más de 40 lenguajes.</p>
+<h3 id="creación-de-cuenta">5.1. Creación de cuenta</h3>
+<p>Primero entramos en <a href="https://c9.io/">Cloud 9</a> y podemos ver que podemos registrarnos directamente desde GitHub:</p>
+<div class="figure">
+<img src="./images/PL-5-1.jpg" />
+
+</div>
+<h3 id="vinculación">5.2. Vinculación</h3>
+<p>Para vincular nuestra cuenta de GitHub junto con c9. Simplemente a la hora de crear un entorno de trabajo (workspace) le podemos indicar que clone a partir de Git simplmente poniendo el URL del repositorio.</p>
+<div class="figure">
+<img src="./images/PL-5-2.jpg" />
+
+</div>
+<h1 id="markdown">6. Markdown</h1>
+<p>Markdown es un lenguaje de marcado ligero, es decir que ocupa poco espacio y es fácil de editar, que trata conseguir la máxima legibilidad y facilidad de publicación tanto en sus formas de entrada como de salida.</p>
+<p>Esta práctica se desarrolla en formato Markdown. Se emplea la siguiente sintaxis:</p>
+<p><strong>Encabezados</strong> + &quot;# --&gt; Para encabezados de tipo h1 equivalente en HTML&quot; + &quot;### --&gt; Para encabezados de tipo h3 equivalente en HTML&quot; + &quot;###### --&gt; Para encabezados de tipo h6 equivalente en HTML&quot;</p>
+<p><strong>Listas</strong> + &quot;+ fila1&quot; + &quot;+ fila2&quot; + &quot;+ fila3&quot;</p>
+<p><strong>Imágenes</strong></p>
+<p>Para imágenes se pone &quot;[título] (link_imagen)&quot; sin el espacio entre medio.</p>
+<p><strong>Enlaces</strong></p>
+<p>Exactamente igual que las imágenes pero en vez de link_imagen es link_url.</p>
+<h1 id="pandoc">7. <a href="http://pandoc.org/">Pandoc</a></h1>
+<p>Pandoc es una herramienta que nos permite exportar un fichero fuente en formato Markdown en otro fichero destino en formato HTML de modo que es muy cómodo para trabajar con páginas web.</p>
+<p>Entramos primero en el siguiente <a href="https://github.com/jgm/pandoc/releases/tag/1.16.0.2">link</a> para descargar el fichero .deb:</p>
+<div class="figure">
+<img src="./images/PL-7-1.jpg" />
+
+</div>
+<p>Que sería el fichero <strong>pandoc-1.16.0.2-1-amd64.deb</strong></p>
+<p>Una vez descargado ejecutamos el mismo comando que hemos ejecutado cuando instalamos <strong>Atom</strong>:</p>
+<p><code>sudo dpkg -i DEB_PACKAGE</code></p>
