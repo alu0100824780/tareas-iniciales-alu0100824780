@@ -12,3 +12,5 @@ Configuración de las herramientas y tecnologías a utilizar en la asignatura Si
 [Página personal de prácticas](http://alu0100824780.github.io/)
 
 [Página de la práctica inicial](http://alu0100824780.github.io/tareas-iniciales-alu0100824780/)
+
+[Página de la asignatura de PL en el campus](https://campusvirtual.ull.es/1516/course/view.php?id=178)
